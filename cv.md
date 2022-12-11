@@ -12,5 +12,7 @@ function multiply(a, b){
   return a * b
 }
 ```
+## Education
+**Belarusian-Russian University, IT Engineer**
 ## English
 **Pre-Intermediate**
