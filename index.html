@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
+
 <body>
+    <div class="content">
+        <header>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#code" class="nav-link">Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#english" class="nav-link">English</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section" id="profile">
+                <img class="avatar" src="assets/img/avatar.jpg" alt="avatar">
+                <h1 class="profile-title">ALEXEI FILIMONOV</h1>
+            </section>
+            <div class="separate-parts">
+                <div class="left-side">
+                    <section class="section" id="contacts">
+                        <h2 class="section-title">CONTACTS</h2>
+                        <ul>
+                            <li>+375259055520</li>
+                            <li>nlifefd@mail.ru</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="skills">
+                        <h2 class="section-title">SKILLS</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </section>
+                    <section class="section" id="english">
+                        <h2 class="section-title">ENGLISH</h2>
+                        <p>Pre-Intermediate</p>
+                    </section>
+                    <section class="section" id="education">
+                        <h2 class="section-title">EDUCATION</h2>
+                        <p>Belarusian-Russian University, IT Engineer</p>
+                    </section>
+                </div>
+                <div class="right-side">
+                    <section class="section" id="about">
+                        <h2 class="section-title">ABOUT ME</h2>
+                        <p>I am searching for experience in front-end development.I think one of my greatest strengths is learning agility. I have the ability to see a situation from different perspectives and I can get my work done even in the face of difficult obstacles.</p>
+                    </section>
+                    <section class="section" id="code">
+                        <h2 class="section-title">CODE</h2>
+                        <pre><code><span class="code-text-blue">var</span> <span class="code-text-red">lengthOfLongestSubstring</span> = <span class="code-text-blue">function</span>(s) {
+      <span class="code-text-blue">let</span> start = 0;
+      <span class="code-text-blue">let</span> longest = "";
+      <span class="code-text-blue">for</span> (<span class="code-text-blue">let</span> i=0; i &lt; s.length; i++){
+          <span class="code-text-blue">if</span> (s.<span class="code-text-red">slice</span>(start, i).<span class="code-text-red">includes</span>(s[i])){
+              start=s.<span class="code-text-red">indexOf</span>(s[i], start)+1;
+          } <span class="code-text-blue">else if</span>(longest.length &lt; s.<span class="code-text-red">slice</span>(start, i+1).length){
+              longest = s.<span class="code-text-red">slice</span>(start, i+1);
+          }
+      }
+    <span class="code-text-blue">return</span> longest.length;
+};</code></pre>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/AlexeiFilimonov"><img class="github-logo" src="assets/svg/github-mark-white.svg"
+                    alt="github-logo"></a>
+            <p class="year">2022</p>
+            <a href="https://rs.school/js/"><img class="rs-school-logo" src="assets/svg/rs_school_js.svg"
+                    alt="rs-school-logo"></a>
+        </footer>
+    </div>
 </body>
+
 </html>
