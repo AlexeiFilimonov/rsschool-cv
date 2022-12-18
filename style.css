@@ -1,3 +1,148 @@
-body{
+@font-face {
+    font-family: Nunito;
+    src: url(assets/fonts/Nunito-Bold.ttf);
+}
+
+* {
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-size: 18px;
+}
+
+body {
+    background-color: #f6ede6;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333030;
+    box-shadow: -2px 1px 2px 0px,
+            1px 2px 4px 0px,
+            2px 4px 8px 0px,
+            2px 4px 16px 0px;
+}
+
+.nav {
+    border-bottom: 2px solid #e6d1c0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-list>li {
+    padding: 0 25px;
+}
+
+.nav-list>li:last-child {
+    padding-right: 50px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #e6d1c0;
+    font-size: 22px;
+    line-height: 70px;
+    border-bottom: 2px solid #f6ede600;
+    transition: .5s;
+}
+
+.nav-list a:hover {
+    color: #f6ede6;
+    border-bottom: 2px solid #f6ede6;
+}
+
+#profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.section>* {
+    padding: 20px 50px;
+}
+
+.profile-title {
+    color: #e6d1c0;
+    font-size: 72px;
+}
+
+.avatar {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.separate-parts {
+    display: flex;
+    background-color: #f6ede6;
+}
+
+.separate-parts .section {
+    height: max-content;
+}
+
+.left-side {
+    width: 40%;
+    border-right: 2px solid #333030;
+}
+
+.right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-title {
+    background-color: #e6d1c0;
+    font-size: 32px;
+}
+
+ul {
+    list-style-position: inside;
+    line-height: 30px;
+    padding: 5px 0;
+}
+
+.code-text-blue {
+    color: rgb(0, 119, 170);
+}
+
+.code-text-red {
+    color: rgb(221, 74, 104);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.rs-school-logo {
+    height: 46px;
+}
+
+.github-logo {
+    height: 46px;
+}
+
+.year {
+    font-size: 18px;
+    color: #e6d1c0;
+}
+
+footer a {
+    height: 46px;
 }
